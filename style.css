@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color:#E2E4FF ;
+    font-family: "Poppins", sans-serif;
+    margin: auto;
+} 
+
+#cover{
+  width: 1500px;
+  height: 1024px;
+  display: flex;
+}
+
+#cover div{
+  flex: 1;
+}
+
+.sec1{
+ background: linear-gradient(0deg, hsla(249, 61%, 36%, 1) 0%, hsla(346, 93%, 47%, 1) 100%);
+
+background: -moz-linear-gradient(0deg, hsla(249, 61%, 36%, 1) 0%, hsla(346, 93%, 47%, 1) 100%);
+
+padding: 100px;
+text-align: left;
+}
+
+.logo{
+  margin-bottom: 60px;
+}
+
+.text-p{
+  color: #573CFA;
+}
+.text-t{
+  color: #573CFA;
+}
+h1{
+  font-size: 36px;
+  /* regular weight */
+  font-weight: 500;
+  margin-bottom: 60px;
+  color: #E2E4FF;
+}
+
+.sec3{
+  padding: 220px 50px 100px 100px;
+  text-align: left   ;
+}
+
+h2{
+  font-size: 36px;
+  margin-bottom:40px ;
+}
+label{
+  display: inline-block;
+  margin: 20px 0;
+  color:#807777 ;
+}
+input{
+  width: 100%;
+  height: 30px;
+  background: #E2E4FF;
+  border: 0;
+  border-bottom: solid 2px black;
+  padding-left: 10px;
+}
+
+#Agreed{
+  display: inline;
+}
+
+/* Keep checkboxes small and inline (don't inherit full-width input styles) */
+input[type="checkbox"]{
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: 0;
+  border-bottom: none;
+  padding-left: 0;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+button{
+  display:block;
+  width: 100%;
+  height: 37px;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 0;
+  background: linear-gradient(90deg, hsla(346, 93%, 47%, 1) 0%, hsla(249, 61%, 36%, 1) 100%);
+  color: white;
+  margin: 15px 0;
+}
+
+button:hover{
+ background: linear-gradient(90deg, hsla(249, 61%, 36%, 1) 0%, hsla(346, 93%, 47%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(249, 61%, 36%, 1) 0%, hsla(346, 93%, 47%, 1) 100%);
+cursor: pointer;
+
+}
+
+.or-sign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+
+.or-sign div{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.A3 p{
+  color:#807777;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.socials{
+  width: 80%;
+  margin: auto;
+}
+
+.socials div{
+
+  display: flex;
+  flex-direction: row;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+
+/* Mobile-first base (small screens) */
+@media (max-width: 499px) {
+  #cover{
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+  }
+
+  #cover div {
+    flex: 0;
+  }
+
+  .sec1{
+    max-height: 390px;
+    text-align: center;
+    background: #E8083E;
+background: linear-gradient(90deg, rgba(52, 36, 148, 1) 0%, rgba(232, 8, 62, 1) 100%);
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .hero{
+    display: none;
+  }
+  
+  .logo{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .logo img{
+    height: 90px;
+    width:160px;
+    padding: 0;
+    margin: 0;
+    margin-left: 40px;
+  }
+
+  h1{
+    margin: 0;
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 14px;
+  }
+
+  h1 br {
+    display: none;
+  }
+
+  .text-p{
+    color: white;
+  }
+
+  .sec3{
+    margin: 0;
+    padding: 50px 40px 40px;
+  }
+
+  .sec3 h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  input{
+    border-bottom:solid 1px #807777;
+  }
+
+  input[type="checkbox"] {
+  color: #573CFA;
+  margin: 0;
+  }
+
+  .or-sign div p{
+  color:#807777;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.or-sign {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  
+}
+
+.or-sign div{
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+  /* .A1 .A2 {
+  width: 30%;
+  margin: 0;
+} */
+
+.A1 img, .A2 img{
+  width: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.socials {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-between;
+  width: 100%;
+}
+
+.socials div{ 
+  margin: 0;
+}
+
+
+  
+
+
+
+
+}
